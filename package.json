@@ -32,5 +32,9 @@
   "keywords": [
     "medical-glossary",
     "document-delivery"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/medical-glossary-delivery-service.git"
+  }
 }
