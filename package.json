@@ -1,0 +1,44 @@
+{
+  "name": "@red-cup-engineering/medical-glossary-delivery-service",
+  "version": "0.2.0",
+  "description": "Search and delivery runtime for the scientific medical glossary corpus.",
+  "type": "module",
+  "exports": {
+    ".": "./src/medical-glossary.mjs",
+    "./glossary-index": "./data/records/glossary-index-records/glossary-index.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src/",
+    "scripts/",
+    "data/records/glossary-index-records/glossary-index.json"
+  ],
+  "scripts": {
+    "derive": "node scripts/derive-medical-glossary-index.mjs",
+    "check": "node --check src/*.mjs && node --check scripts/*.mjs"
+  },
+  "dependencies": {
+    "@red-cup-engineering/computer-file-engineering-services-section": "^0.8.4",
+    "@red-cup-engineering/term-engineering-services-section": "^0.3.2",
+    "@red-cup-engineering/javascript-file-engineering-services-section": "^0.1.2"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "medical-glossary",
+    "document-delivery"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/medical-glossary-delivery-service.git"
+  },
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
+}
